@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ativismo nas Praias"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextNomePraia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome da praia"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade" />
+
+    <EditText
+        android:id="@+id/editTextEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado" />
+
+    <Button
+        android:id="@+id/buttonIncluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incluir"
+        android:textColor="#FFF"
+        android:background="#2196F3"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        />
+
+    <Button
+        android:id="@+id/buttonRemoverTudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remover Todos os Itens"
+        android:textColor="#FFF"
+        android:background="#FF0000"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPraias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
